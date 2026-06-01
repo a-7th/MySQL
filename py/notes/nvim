@@ -1,0 +1,252 @@
+============Neovim Movement===================
+
+Neovim: hjkl, wbe, gg/G, i/a/o, dd, yy, p, u, /, ciw, :wq
+
+Character Movement
+h
+
+← left
+
+j
+
+↓ down
+
+k
+
+↑ up
+
+l
+
+→ right
+
+Word Movement
+w
+
+→ next word start
+
+b
+
+→ previous word start
+
+e
+
+→ word end
+
+Line Movement
+0
+
+→ start of line
+
+^
+
+→ first non-space
+
+$
+
+→ end of line
+
+File Movement
+gg
+
+→ top of file
+
+G
+
+→ bottom of file
+
+50G
+
+→ line 50
+
+Insert Mode
+i
+
+→ insert before cursor
+
+a
+
+→ insert after cursor
+
+I
+
+→ insert start of line
+
+A
+
+→ insert end of line
+
+o
+
+→ new line below
+
+O
+
+→ new line above
+
+Esc
+
+→ return normal mode
+
+Editing
+x
+
+→ delete character
+
+dd
+
+→ delete line
+
+D
+
+→ delete to line end
+
+yy
+
+→ copy line
+
+p
+
+→ paste below
+
+P
+
+→ paste above
+
+u
+
+→ undo
+
+Ctrl-r
+
+→ redo
+
+Search
+/text
+
+→ search forward
+
+?text
+
+→ search backward
+
+n
+
+→ next match
+
+N
+
+→ previous match
+
+Replace
+:%s/old/new/g
+
+→ replace all.
+
+:s/old/new/g
+
+→ replace in current line.
+
+Visual Mode
+v
+
+→ select characters
+
+V
+
+→ select lines
+
+Ctrl-v
+
+→ block selection
+
+Windows
+:split
+
+→ horizontal split
+
+:vsplit
+
+→ vertical split
+
+Ctrl-w h
+
+→ left window
+
+Ctrl-w j
+
+→ down window
+
+Ctrl-w k
+
+→ up window
+
+Ctrl-w l
+
+→ right window
+
+Buffers
+:ls
+
+→ list buffers
+
+:bn
+
+→ next buffer
+
+:bp
+
+→ previous buffer
+
+:bd
+
+→ close buffer
+
+Files
+:w
+
+→ save
+
+:q
+
+→ quit
+
+:wq
+
+→ save and quit
+
+:q!
+
+→ quit without saving
+
+Advanced Vim Motions
+ciw
+
+→ change current word
+
+diw
+
+→ delete current word
+
+yiw
+
+→ copy current word
+
+ci"
+
+→ replace inside quotes
+
+ci(
+
+→ replace inside ()
+
+ci{
+
+→ replace inside {}
+
+dap
+
+→ delete paragraph
+
+vip
+
+→ select paragraph

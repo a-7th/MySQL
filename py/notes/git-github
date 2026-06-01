@@ -1,0 +1,173 @@
+=====================Git======================
+
+Git: status, add, commit, log, branch, switch, merge, pull, push, stash
+
+Repository
+git init
+
+→ Start Git in current folder.
+
+git clone URL
+
+→ Download an existing repository.
+
+git status
+
+→ Show current state of files.
+
+Adding Files
+git add file.py
+
+→ Stage one file for commit.
+
+git add .
+
+→ Stage all changed files.
+
+git restore --staged file.py
+
+→ Remove file from staging area.
+
+Commits
+git commit -m "message"
+
+→ Save staged changes.
+
+git commit --amend
+
+→ Edit last commit.
+
+git log
+
+→ View commit history.
+
+git log --oneline
+
+→ Compact history view.
+
+Differences
+git diff
+
+→ Show unstaged changes.
+
+git diff --staged
+
+→ Show staged changes.
+
+Branches
+git branch
+
+→ List branches.
+
+git branch new-feature
+
+→ Create branch.
+
+git switch new-feature
+
+→ Move to branch.
+
+git switch -c new-feature
+
+→ Create and switch.
+
+git merge new-feature
+
+→ Merge branch into current.
+
+git branch -d new-feature
+
+→ Delete branch.
+
+Undoing Stuff
+git restore file.py
+
+→ Discard local changes.
+
+git reset --soft HEAD~1
+
+→ Remove last commit, keep changes.
+
+git reset --hard HEAD~1
+
+→ Delete last commit and changes.
+
+Stash
+git stash
+
+→ Temporarily save work.
+
+git stash list
+
+→ Show stashes.
+
+git stash pop
+
+→ Restore latest stash.
+
+Remote Repositories
+git remote -v
+
+→ Show connected remotes.
+
+git remote add origin URL
+
+→ Connect GitHub repo.
+
+git fetch
+
+→ Download updates only.
+
+git pull
+
+→ Fetch + merge updates.
+
+git push
+
+→ Upload commits.
+
+git push -u origin main
+
+→ First push and track branch.
+
+Rebase
+git rebase main
+
+→ Replay commits on top of main.
+
+git pull --rebase
+
+→ Pull without merge commit.
+
+Tags
+git tag v1.0
+
+→ Create version tag.
+
+git push origin v1.0
+
+→ Upload tag.
+
+GitHub CLI (optional)
+
+Install:
+
+gh auth login
+
+→ Login to GitHub.
+
+gh repo create
+
+→ Create repo from terminal.
+
+gh repo clone user/repo
+
+→ Clone repo.
+
+gh pr create
+
+→ Create Pull Request.
+
+gh pr list
+
+→ View Pull Requests.

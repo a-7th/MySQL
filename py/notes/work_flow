@@ -1,0 +1,130 @@
+After learning Neovim and Git commands, what companies usually expect is workflow, not memorizing commands.
+
+1. Start your day
+git pull
+
+Get the latest changes from the team.
+
+Open project:
+
+nvim .
+2. Find the task
+
+Maybe:
+
+Fix bug
+Add feature
+Refactor code
+
+Read the code using:
+
+gg
+G
+/search
+w b e
+
+Navigate quickly until you understand the code.
+
+3. Create a branch
+
+Never work directly on main.
+
+git switch -c fix-login-bug
+
+or
+
+git switch -c add-user-validation
+4. Edit code
+
+Use:
+
+ciw
+dd
+yy
+p
+u
+
+and save:
+
+:w
+
+Repeat until feature/bug is done.
+
+5. Check changes
+git diff
+
+Review what you changed.
+
+6. Stage files
+git add .
+
+or
+
+git add file.c
+7. Commit
+git commit -m "Fix login validation bug"
+
+Good commit message:
+
+Add user authentication
+Fix memory leak
+Refactor parser
+Improve error handling
+8. Push branch
+git push -u origin fix-login-bug
+9. Create Pull Request
+
+GitHub UI or:
+
+gh pr create
+
+Team reviews your code.
+
+10. If review asks for changes
+
+Edit code:
+
+nvim file.c
+
+Commit again:
+
+git add .
+git commit -m "Address review comments"
+git push
+11. After PR merged
+
+Switch back:
+
+git switch main
+
+Get latest:
+
+git pull
+
+Delete old branch:
+
+git branch -d fix-login-bug
+Daily workflow (the one you'll repeat 1000 times)
+git pull
+
+git switch -c feature-name
+
+nvim .
+
+(edit code)
+
+git diff
+
+git add .
+
+git commit -m "message"
+
+git push
+
+Create PR
+
+Review
+
+Merge
+
+git pull

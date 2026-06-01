@@ -1,0 +1,49 @@
+<!-- #bash: python3 -m venv pen
+
+This is the important part.
+
+python3 = run Python
+-m venv = run Python's built-in virtual environment module
+pen = name of the environment -->
+
+================================
+<!-- Python created:
+
+pen/
+├── bin/
+├── include/
+├── lib/
+└── pyvenv.cfg
+
+Think of pen as a mini Python installation dedicated to a project. -->
+================================
+<!-- Important files:
+
+File	Purpose
+activate	Turns the environment on
+python	Python interpreter for this venv
+pip	Package installer for this venv -->
+================================
+<!-- Activate the environment
+source pen/bin/activate
+
+This doesn't start Python.
+
+Instead, it changes shell variables so that when you type:
+
+python
+
+your shell uses:
+
+.../pen/bin/python
+
+instead of:
+
+/usr/bin/python
+
+That's why your prompt changed:
+
+(pen) sh-5.3$
+
+The (pen) is just a reminder that the environment is active. -->
+==============================
