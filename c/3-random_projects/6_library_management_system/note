@@ -1,0 +1,10 @@
+4. When everything happens
+Program starts
+→ getLastID() reads file and finds highest ID
+AddBook()
+→ assigns current_id + 1
+→ saves new book with fwrite()
+Borrow / Return
+→ reads file with fread()
+→ modifies matching book in memory
+→ rewrites whole file using temp file
