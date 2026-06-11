@@ -376,7 +376,7 @@ START TRANSACTION;
 -- UPDATE Accounts SET Balance = Balance + 100 WHERE User_ID = 2;
 -- C]- Commit to save changes permanently if everything worked:
 COMMIT;
--- D]- Keep Rollback commented out in your main script file. 
+-- D]- Keep Rollback commented out in our main script file. 
 -- ROLLBACK;
 
 

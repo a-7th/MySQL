@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS Artwork;
+CREATE DATABASE Artwork;
+USE Artwork;

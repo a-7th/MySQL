@@ -44,7 +44,7 @@ COMMIT;
 -- Stored Procedure with proper spacing and types
 DELIMITER //
 CREATE PROCEDURE calc(
-    IN input_user_id INT, -- Fixed datatype from 'IN' to 'INT'
+    IN input_user_id INT,
     OUT Total_spent DECIMAL(5,2)
 )
 BEGIN
